@@ -102,33 +102,32 @@ Hands-on practice quest #00: prerequisites sound-check (15+5)
 ``` 
 
 - [ ] When участники *именуют сценарии*, выполняют команды и анализируют их вывод и поведение
-- Сценарий "Как ...?"
+- Сценарий "Docker System?"
 ```shell
-docker version # version info (particslly, API version, that is important by compatibility reasons)
-docker system info # system info
-docker system df
-
-docker events
+docker version # shows the Docker version information (particslly, API version, that is important by compatibility reasons)
+docker system info # displays system-wide information
+docker system df # displays information regarding the amount of disk space used by the docker daemon
+docker events # gets real time events from the server
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Docker Registry Login?"
 (в новом ssh shell, чтобы параллельно видеть вывод `docker events`)
 ```shell
-docker logout
+docker logout # Log out from a Docker registry
 open https://hub.docker.com/settings/security # to make Access Token
 docker login -u {{ registry-account }} -p {{ access-token }} # login default hub.docker.com registry
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Pull Docker Image"
 ```shell
-docker image pull alpine
+docker image pull alpine # Pull an image or a repository from a registry
 docker system df
 ````
 
-- Сценарий "Как ...?"
+- Сценарий "Run New Container?"
 ```shell
-docker container ls [--all]
-docker container run --name demo -it alpine
+docker container ls [--all] # List containers
+docker container run --name demo -it alpine # Run a command in a new container (foreground)
 /# cat /etc/os-release
 /# exit 
 ```
