@@ -14,10 +14,6 @@ Prerequisites
 sudo dnf install -y docker
 ```
 
-Agenda
-======
-7:20
-
 Формат
 ------
 - две части курса: обязательная базовая для всех ролей и расширенные темы больше в сторону эксплуатации
@@ -108,8 +104,8 @@ Hands-on practice quest #00: prerequisites sound-check (15+5)
 - [ ] When участники *именуют сценарии*, выполняют команды и анализируют их вывод и поведение
 - Сценарий "Как ...?"
 ```shell
-docker version # TODO: собственные пометки участников для будущего использования в проектах
-docker system info
+docker version # version info (particslly, API version, that is important by compatibility reasons)
+docker system info # system info
 docker system df
 
 docker events
