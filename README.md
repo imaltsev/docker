@@ -132,10 +132,10 @@ docker container run --name demo -it alpine # Run a command in a new container (
 /# exit 
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Manage containers"
 ```shell
 docker container ls [--all]
-docker container rm [--force] demo
+docker container rm [--force] demo # Remove one or more containers
 ```
 
 - [ ] Then участники делятся проблемами и отвечают на вопросы
