@@ -236,23 +236,23 @@ Hands-on practice quest #01: pre-built disk image lifecycle (15+5)
 - [ ] Given пары участников
 
 - [ ] When участники именуют сценарии, выполняют команды и анализируют их вывод и поведение
-- Сценарий "Как ...?"
+- Сценарий "List images"
 ```shell
-docker image ls # TODO: собственные пометки участников для будущего использования в проектах
+docker image ls
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Pull an image or a repository from a registry"
 ```shell
 docker image pull alpine
 docker image ls
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Show image history?"
 ```shell
 docker image history alpine
 
-docker image inspect alpine
-docker image inspect --format='{{.Id}} -> {{.Parent}}' alpine
+docker image inspect alpine # Display detailed information on one or more images
+docker image inspect --format='{{.Id}} -> {{.Parent}}' alpine # Format output
 ```
 
 - Сценарий "Как ...?"
